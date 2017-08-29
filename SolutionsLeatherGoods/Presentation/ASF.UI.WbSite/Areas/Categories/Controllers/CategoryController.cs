@@ -15,5 +15,14 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
             var Lista = CategoryProcess.SelectList();
             return View(Lista);
         }
+
+        public ActionResult Create()
+        {
+
+            return View();
+        }
+
+
+
     }
 }
