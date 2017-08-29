@@ -242,6 +242,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\Categories\CategoriesAreaRegistration.cs" />
+    <Compile Include="Areas\Categories\Controllers\CategoryController.cs" />
     <Compile Include="Constants\ExtensionMethods\HtmlLabelExtensions.cs" />
     <Compile Include="Constants\ExtensionMethods\TypeFactory.cs" />
     <Compile Include="Constants\ExtensionMethods\WebGridExtensions.cs" />
@@ -293,6 +295,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
@@ -400,6 +404,14 @@
     <Content Include="Content\bootstrap\bootstrap.less" />
     <Content Include="Content\bootstrap\badges.less" />
     <Content Include="Content\bootstrap\alerts.less" />
+    <Content Include="Areas\Categories\Views\web.config" />
+    <Content Include="Areas\Categories\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Categories\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Categories\Views\Category\Index.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="job_scheduling_data_2_0.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -547,6 +559,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Categories\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">

@@ -1,0 +1,11 @@
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\ASF.Framework.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\ASF.Framework.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\AntiXssLibrary.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\HtmlAgilityPack.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\HtmlSanitizationLibrary.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\HtmlAgilityPack.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\HtmlAgilityPack.xml
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\HtmlSanitizationLibrary.xml
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\obj\Debug\ASF.Framework.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\obj\Debug\ASF.Framework.pdb
