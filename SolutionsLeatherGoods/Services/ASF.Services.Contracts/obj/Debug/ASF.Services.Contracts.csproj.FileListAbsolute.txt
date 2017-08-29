@@ -1,0 +1,5 @@
+C:\Users\Navegador\Desktop\SolutionsLeatherGoods\bin\ASF.Services.Contracts.dll
+C:\Users\Navegador\Desktop\SolutionsLeatherGoods\bin\ASF.Services.Contracts.pdb
+C:\Users\Navegador\Desktop\SolutionsLeatherGoods\Services\ASF.Services.Contracts\obj\Debug\ASF.Services.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\Navegador\Desktop\SolutionsLeatherGoods\Services\ASF.Services.Contracts\obj\Debug\ASF.Services.Contracts.dll
+C:\Users\Navegador\Desktop\SolutionsLeatherGoods\Services\ASF.Services.Contracts\obj\Debug\ASF.Services.Contracts.pdb
