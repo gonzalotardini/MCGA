@@ -16,12 +16,22 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
             return View(Lista);
         }
 
+        [HttpGet]
         public ActionResult Create()
         {
 
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Create (Entities.Category Category)
+        {
+
+            var CategoryProcess = new Process.CategoryProcess();
+            CategoryProcess.Create(Category);
+           
+            return RedirectToAction("Index");
+        }
 
 
     }
