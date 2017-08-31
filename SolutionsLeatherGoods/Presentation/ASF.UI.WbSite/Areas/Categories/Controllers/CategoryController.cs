@@ -1,8 +1,11 @@
-﻿using System;
+﻿using ASF.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
+
 
 namespace ASF.UI.WbSite.Areas.Categories.Controllers
 {
@@ -24,15 +27,22 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create (Entities.Category Category)
+        public ActionResult Create (Entities.Category category)
         {
-
+            var principal = Thread.CurrentPrincipal.Identity.Name;
             var CategoryProcess = new Process.CategoryProcess();
-            CategoryProcess.Create(Category);
+            CategoryProcess.Create(category);
            
             return RedirectToAction("Index");
         }
 
 
+        public ActionResult Update(Category category) {
+
+            var categoryprocess = new Process.CategoryProcess();
+            categoryprocess.Update(category);
+
+            return RedirectToAction("Index");
+        }
     }
 }
