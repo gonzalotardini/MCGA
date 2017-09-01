@@ -37,12 +37,14 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
         }
 
 
-        public ActionResult Update(Category category) {
+        public ActionResult Edit(Category category) {
 
             var categoryprocess = new Process.CategoryProcess();
-            categoryprocess.Update(category);
+            categoryprocess.Edit(category);
 
-            return RedirectToAction("Index");
+            return View();
         }
+
+
     }
 }

@@ -32,9 +32,9 @@ namespace ASF.UI.Process
 
         }
 
-        public void Update(Category category)
+        public void Edit(Category category)
         {
-            var response = HttpPost<Category>("rest/Category/Add", category, MediaType.Json);
+            var response = HttpGet<Category>("rest/Category/Find/"+ category.Id, MediaType.Json);
         }
     }
 }
