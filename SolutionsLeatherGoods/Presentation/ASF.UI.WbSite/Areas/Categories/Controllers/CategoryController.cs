@@ -40,8 +40,16 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
         public ActionResult Edit(Category category) {
 
             var categoryprocess = new Process.CategoryProcess();
-            categoryprocess.Edit(category);
+            categoryprocess.SelectOne(category);
 
+            return View(category);
+        }
+
+        
+        public ActionResult Delete(Category category)
+        {
+            var CategoryProcess = new Process.CategoryProcess();
+            CategoryProcess.SelectOne(category);
             return View();
         }
 

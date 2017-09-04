@@ -66,7 +66,7 @@ namespace ASF.UI.Process
         /// <param name="pathAndQuery">The path and query to call.</param>
         /// <param name="mediaType">The media type to use i.e. application/xml or application/json.</param>
         /// <returns>An object specified in the generic type.</returns>
-        protected static T HttpGet<T>(string pathAndQuery, string mediaType)
+        private static T HttpGet<T>(string pathAndQuery, string mediaType)
         {
             T result = default(T);
 
@@ -77,8 +77,7 @@ namespace ASF.UI.Process
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType));
 
                 var response = client.GetAsync(pathAndQuery).Result;
-                response.EnsureSuccessStatusCode();
-
+                response.EnsureSuccessStatusCode();                
                
                 result = response.Content.ReadAsAsync<T>().Result;
             }

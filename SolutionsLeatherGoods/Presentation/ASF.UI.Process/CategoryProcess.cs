@@ -31,10 +31,23 @@ namespace ASF.UI.Process
 
 
         }
-
-        public void Edit(Category category)
+        
+        public Category SelectOne(Category category)
         {
-            var response = HttpGet<Category>("rest/Category/Find/"+ category.Id, MediaType.Json);
+            var response = HttpGet<Category>("rest/Category/Find/"+category.Id,new Dictionary<string,object>(), MediaType.Json);
+            return response;
         }
+
+        
+        public void Delete(Category category)
+        {
+            var responde = HttpPost<Category>("rest/Category/Find/" + category.Id, category, MediaType.Json);
+            
+        }
+
     }
+
+
+
+
 }
