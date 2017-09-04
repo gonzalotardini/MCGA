@@ -3,9 +3,9 @@ C:\Users\Navegador\Desktop\SolutionsLeatherGoods\bin\ASF.UI.Process.pdb
 C:\Users\Navegador\Desktop\SolutionsLeatherGoods\Presentation\ASF.UI.Process\obj\Debug\ASF.UI.Process.csprojResolveAssemblyReference.cache
 C:\Users\Navegador\Desktop\SolutionsLeatherGoods\Presentation\ASF.UI.Process\obj\Debug\ASF.UI.Process.dll
 C:\Users\Navegador\Desktop\SolutionsLeatherGoods\Presentation\ASF.UI.Process\obj\Debug\ASF.UI.Process.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.Process\obj\Debug\ASF.UI.Process.csprojResolveAssemblyReference.cache
 C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.UI.Process.dll.config
 C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.UI.Process.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.UI.Process.pdb
-C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.Process\obj\Debug\ASF.UI.Process.csprojResolveAssemblyReference.cache
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.Process\obj\Debug\ASF.UI.Process.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.Process\obj\Debug\ASF.UI.Process.pdb

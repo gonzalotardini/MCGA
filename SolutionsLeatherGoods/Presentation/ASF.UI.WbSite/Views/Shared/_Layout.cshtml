@@ -153,7 +153,10 @@
 
     <style>
 
-            
+        #a {
+        
+            color:blue;
+        }
 
     </style>
 </head>
@@ -162,7 +165,7 @@
         See http://a11yproject.com/posts/skip-nav-links/. *@
     <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
     @* nav - The main navigation for the site. *@
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="Nav">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="Nav">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -174,7 +177,7 @@
             </div>
             <div class="navbar-collapse collapse" >
                 <ul class="nav navbar-nav">
-                    <li><a href="@Url.RouteUrl(HomeControllerRoute.GetAbout)"><span aria-hidden="true" class="fa fa-users"></span> About</a></li>
+                    <li><a id="a" href="@Url.RouteUrl(HomeControllerRoute.GetAbout)"><span aria-hidden="true" class="fa fa-users"></span> About</a></li>
                     <li><a href="@Url.RouteUrl(HomeControllerRoute.GetContact)"><span aria-hidden="true" class="fa fa-phone"></span> Contact</a></li>
                     <li><a href="@Url.RouteUrl(HomeControllerRoute.GetFeed)"><span aria-hidden="true" class="fa fa-rss"></span> RSS</a></li>                   
 
@@ -191,7 +194,8 @@
                         @if (HttpContext.Current.IsDebuggingEnabled)
                         {
                             // if <compilation debug="true"> is set in Web.config.
-<li class="dropdown">
+
+                        <li class="dropdown">
                             <a class="dropdown-toggle" role="button" aria-expanded="false" href="#" data-toggle="dropdown"><span aria-hidden="true" class="fa fa-cogs"></span> Debug <span aria-hidden="true" class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/@ConfigurationManager.AppSettings["elmah.mvc.route"]"><span aria-hidden="true" class="fa fa-life-ring"></span> Elmah</a></li>
@@ -202,7 +206,7 @@
                     }
                 </ul>
 
-                <
+                
 
 
                 @Html.Partial("_LoginPartial")

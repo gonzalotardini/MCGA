@@ -36,20 +36,20 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
             return RedirectToAction("Index");
         }
 
-
-        public ActionResult Edit(Category category) {
+        // GET Edit/{id}
+        public ActionResult Edit(int id) {
 
             var categoryprocess = new Process.CategoryProcess();
-            categoryprocess.SelectOne(category);
+           var cat =  categoryprocess.SelectOne(id);
 
-            return View(category);
+            return View(cat);
         }
 
         
-        public ActionResult Delete(Category category)
+        public ActionResult Delete( int id  )
         {
             var CategoryProcess = new Process.CategoryProcess();
-            CategoryProcess.SelectOne(category);
+            CategoryProcess.SelectOne(id);
             return View();
         }
 

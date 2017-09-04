@@ -92,6 +92,7 @@ C:\Users\Navegador\Desktop\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\
 C:\Users\Navegador\Desktop\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\obj\Debug\ASF.UI.WbSite.csprojResolveAssemblyReference.cache
 C:\Users\Navegador\Desktop\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\obj\Debug\Boilerplate.Web.Mvc5.Sample.dll
 C:\Users\Navegador\Desktop\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\obj\Debug\Boilerplate.Web.Mvc5.Sample.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\obj\Debug\ASF.UI.WbSite.csprojResolveAssemblyReference.cache
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Boilerplate.Web.Mvc5.Sample.dll.config
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Boilerplate.Web.Mvc5.Sample.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Boilerplate.Web.Mvc5.Sample.pdb
@@ -191,6 +192,5 @@ C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\System.Web.Opti
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\ASF.Services.Contracts.pdb
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\System.Net.Http.Formatting.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\es\System.Net.Http.Formatting.resources.dll
-C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\obj\Debug\ASF.UI.WbSite.csprojResolveAssemblyReference.cache
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\obj\Debug\Boilerplate.Web.Mvc5.Sample.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\obj\Debug\Boilerplate.Web.Mvc5.Sample.pdb

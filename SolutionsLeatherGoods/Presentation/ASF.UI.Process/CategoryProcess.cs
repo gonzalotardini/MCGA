@@ -32,10 +32,15 @@ namespace ASF.UI.Process
 
         }
         
-        public Category SelectOne(Category category)
+        public Category SelectOne(int id)
         {
-            var response = HttpGet<Category>("rest/Category/Find/"+category.Id,new Dictionary<string,object>(), MediaType.Json);
-            return response;
+
+            var parameters = new Dictionary<string, object>();
+            parameters.Add("id", id);
+
+
+            var response = HttpGet<FindResponse>("rest/Category/Find",parameters, MediaType.Json);
+            return response.Result;
         }
 
         
