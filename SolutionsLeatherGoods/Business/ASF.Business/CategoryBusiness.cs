@@ -73,6 +73,7 @@ namespace ASF.Business
         public void Edit(Category category)
         {
             var categoryDac = new CategoryDac();
+            category.ChangedOn = DateTime.Now;            
             categoryDac.UpdateById(category);
         }
     }
