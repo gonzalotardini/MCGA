@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using ASF.Entities;
 using ASF.Data;
-
+using System.Threading;
 
 namespace ASF.Business
 {
@@ -27,6 +27,9 @@ namespace ASF.Business
         public Category Add(Category category)
         {
             var categoryDac = new CategoryDac();
+            category.CreatedOn = DateTime.Now;
+            category.ChangedOn = DateTime.Now;           
+
             return categoryDac.Create(category);
         }
 

@@ -14,12 +14,15 @@ using ASF.Entities;
 
 namespace ASF.Services.Contracts
 {
-    
+
     [DataContract]
     public class AllResponse
     {
         [DataMember]
         public List<Category> Result { get; set; }
+
+        [DataMember]
+        public List<Country> ResultCountry { get; set; }
     }
 }
 

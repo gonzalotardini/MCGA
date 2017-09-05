@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Net.Http;
+
 using System.Net.Http.Headers;
 using System.Web;
 
@@ -76,8 +77,8 @@ namespace ASF.UI.Process
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(mediaType));
 
                 var response = client.GetAsync(pathAndQuery).Result;
-                response.EnsureSuccessStatusCode();
-
+                response.EnsureSuccessStatusCode();                
+               
                 result = response.Content.ReadAsAsync<T>().Result;
             }
 
