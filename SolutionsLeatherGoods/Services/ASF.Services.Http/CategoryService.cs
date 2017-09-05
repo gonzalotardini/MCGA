@@ -67,7 +67,7 @@ namespace ASF.Services.Http
             }
         }
 
-        [HttpPut]
+        [HttpPost]
         [Route("Edit")]
         public void Edit(Category category)
         {
@@ -111,14 +111,14 @@ namespace ASF.Services.Http
             }
         }
 
-        [HttpGet]
-        [Route("Remove/{id}")]
-        public void Remove(int id)
+        [HttpPost]
+        [Route("Remove")]
+        public void Remove(object id)
         {
             try
             {
                 var bc = new CategoryBusiness();
-                bc.Remove(id);
+                bc.Remove(Convert.ToInt32(id));
             }
             catch (Exception ex)
             {

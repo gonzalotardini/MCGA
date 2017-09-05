@@ -27,12 +27,12 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create (Entities.Category category)
+        public ActionResult Create(Entities.Category category)
         {
             var principal = Thread.CurrentPrincipal.Identity.Name;
             var CategoryProcess = new Process.CategoryProcess();
             CategoryProcess.Create(category);
-           
+
             return RedirectToAction("Index");
         }
 
@@ -40,19 +40,36 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
         public ActionResult Edit(int id) {
 
             var categoryprocess = new Process.CategoryProcess();
-           var cat =  categoryprocess.SelectOne(id);
+            var cat = categoryprocess.SelectOne(id);
 
             return View(cat);
         }
 
-        
+        [HttpPost]
+        public ActionResult Edit (Category category)
+        {
+            var CategoryProcess = new Process.CategoryProcess();
+            CategoryProcess.Edit(category);
+            return RedirectToAction("Index");
+        }
+
+       [HttpGet]
         public ActionResult Delete( int id  )
         {
             var CategoryProcess = new Process.CategoryProcess();
-            CategoryProcess.SelectOne(id);
-            return View();
+            var categoria=CategoryProcess.SelectOne(id);
+            return View(categoria);
         }
 
+        [HttpPost]
+        public ActionResult Delete(string id)
+        {
+            var CategoryProcess = new Process.CategoryProcess();
+            CategoryProcess.Delete(Convert.ToInt32(id));
+            return RedirectToAction("Index");
+        }
+
+        
 
     }
 }

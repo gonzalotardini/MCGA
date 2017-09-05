@@ -44,11 +44,17 @@ namespace ASF.UI.Process
         }
 
         
-        public void Delete(Category category)
+        public void Delete(int id)
         {
-            var responde = HttpPost<Category>("rest/Category/Find/" + category.Id, category, MediaType.Json);
+            var response = HttpPost<int>("rest/Category/Remove" ,id, MediaType.Json);
             
         }
+
+        public void Edit(Category category)
+        {
+            var response = HttpPost<Category>("rest/Category/Edit", category, MediaType.Json);
+        }
+
 
     }
 
