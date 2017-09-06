@@ -175,6 +175,14 @@
              color:white;
              font-weight:bold;
          }
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+            background-color: #000000;            
+        }
+
+
+        ul.navbar-nav a:hover {
+            color: #fff !important;
+        }
     </style>
 </head>
 <body>
@@ -248,7 +256,7 @@
                 <a class="navbar-brand" href="#">@*WebSiteName*@</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a id="a" href="#">Home</a></li>
+                <li><a id="a" href="@Url.Action("Index","Home")">Home</a></li>
                 <li><a id="a" href="#">Page 1</a></li>
                 <li><a id="a" href="#">Page 2</a></li>
                 <li><a id="a" href="#">Page 3</a></li>

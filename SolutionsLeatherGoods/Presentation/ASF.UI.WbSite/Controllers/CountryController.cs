@@ -19,5 +19,22 @@ namespace ASF.UI.WbSite.Controllers
             List = CountryProcess.SelectList();          
             return View(List);
         }
+
+        [HttpGet]
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult Create (Country country)
+        {
+            var countryProcess = new Process.CountryProcess();
+            countryProcess.Create(country);
+            return RedirectToAction("Index");
+        }
+
     }
 }
