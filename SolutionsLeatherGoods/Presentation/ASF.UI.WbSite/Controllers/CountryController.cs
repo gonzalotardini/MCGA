@@ -36,5 +36,12 @@ namespace ASF.UI.WbSite.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public ActionResult Details (int id)
+        {
+
+
+            return View(id);
+        }
     }
 }
