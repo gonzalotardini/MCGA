@@ -61,6 +61,7 @@
     <Compile Include="CategoryService.cs" />
     <Compile Include="ClientService.cs" />
     <Compile Include="CountryService.cs" />
+    <Compile Include="DataCache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
