@@ -21,7 +21,10 @@ namespace ASF.Business
             return ListCountry;
         }
 
-
-
+        public Country Add(Country country)
+        {
+            var CountryDac = new CountryDAC();
+            return CountryDac.Create(country);
+        }
     }
 }

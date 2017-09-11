@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Net.Http;
 using System.Net;
+using ASF.Entities;
 
 namespace ASF.Services.Http
 {
@@ -19,7 +20,6 @@ namespace ASF.Services.Http
         [Route("All")]      
         public AllResponse All()
         {
-
             try
             {
                 var response = new AllResponse();
@@ -40,6 +40,26 @@ namespace ASF.Services.Http
 
         }
 
+        [HttpPost]
+        [Route("Add")]
+        public Country Add(Country country)
+        {
+            try
+            {
+                var bcountry = new CountryBusiness();
+                return bcountry.Add(country);
+            }
+            catch (Exception ex)
+            {
+                var httpError = new HttpResponseMessage()
+                {
+                    StatusCode = (HttpStatusCode)422,
+                    ReasonPhrase = ex.Message
+                };
+
+                throw new HttpResponseException(httpError);
+            }
+        }
 
     }
 }

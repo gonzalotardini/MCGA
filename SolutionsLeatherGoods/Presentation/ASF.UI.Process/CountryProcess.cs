@@ -20,12 +20,10 @@ namespace ASF.UI.Process
             return response.ResultCountry;
         }
 
-        //public void Create(Category Category)
-        //{
-        //    var response = HttpPost<Category>("rest/Category/Add", Category, MediaType.Json);
-
-
-        //}
+        public void Create(Country country)
+        {
+            var response = HttpPost<Country>("rest/country/Add", country, MediaType.Json);
+        }
 
         //public Category SelectOne(Category category)
         //{
