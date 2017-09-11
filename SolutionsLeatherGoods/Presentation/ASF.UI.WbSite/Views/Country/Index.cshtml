@@ -3,28 +3,38 @@
 @{
     ViewBag.Title = "Index";
 }
+<style>
 
-<h2>Index</h2>
+    h5 {
+    font-weight:bold;
+    vertical-align:top;
+    }
+
+</style>
+
+<div class="jumbotron">
+    <h2>Países</h2>
+</div>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Nuevo", "Create", "Country", new { @class = "btn btn-info" })       
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            <h5>Descripción</h5>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CreatedOn)
+           <h5>Fecha de creación</h5>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CreatedBy)
+           <h5>Creado por</h5>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ChangedOn)
+            <h5>Fecha de actualización</h5>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ChangedBy)
+            <h5>Actualizado por</h5>
         </th>
         <th></th>
     </tr>
@@ -46,10 +56,10 @@
         <td>
             @Html.DisplayFor(modelItem => item.ChangedBy)
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        <td>            
+            @Html.ActionLink("Editar", "Edit", new {id =item.Id}, new { @class="btn-xs btn-info"} )
+            @Html.ActionLink("Detalles", "Details", new { id=item.Id },new {@class="btn-xs btn-warning" }) 
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.Id }, new { @class = "btn-xs btn-danger" } )
         </td>
     </tr>
 }

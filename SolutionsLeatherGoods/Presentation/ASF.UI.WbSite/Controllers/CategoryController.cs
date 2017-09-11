@@ -69,7 +69,15 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
             return RedirectToAction("Index");
         }
 
-        
+        [HttpGet]
+        public ActionResult Details (int id)
+        {
+            var category = new Category();
+            var CategoryProcess = new Process.CategoryProcess();
+
+            category = CategoryProcess.SelectOne(id);
+            return View(category);
+        }
 
     }
 }
