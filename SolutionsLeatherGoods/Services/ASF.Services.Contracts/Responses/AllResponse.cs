@@ -23,6 +23,9 @@ namespace ASF.Services.Contracts
 
         [DataMember]
         public List<Country> ResultCountry { get; set; }
+
+        [DataMember]
+        public List<Client> ResultClient{ get; set; }
     }
 }
 

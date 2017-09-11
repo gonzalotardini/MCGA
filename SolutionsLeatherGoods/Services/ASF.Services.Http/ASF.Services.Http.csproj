@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategoryService.cs" />
+    <Compile Include="ClientService.cs" />
     <Compile Include="CountryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,6 +71,10 @@
     <ProjectReference Include="..\..\Business\ASF.Business\ASF.Business.csproj">
       <Project>{1290A947-F5D1-45B8-B19A-E0F9185DE46B}</Project>
       <Name>ASF.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\ASF.Data\ASF.Data.csproj">
+      <Project>{422EB420-D9BC-4286-9E35-E9E3058DEFE8}</Project>
+      <Name>ASF.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Shared\ASF.Entities\ASF.Entities.csproj">
       <Project>{5F7C08E8-891E-41C7-9E8D-E94B75222C0B}</Project>
