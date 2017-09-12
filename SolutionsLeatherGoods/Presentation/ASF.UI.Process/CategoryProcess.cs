@@ -11,6 +11,8 @@ using ASF.Entities;
 using ASF.Services.Contracts;
 using ASF.UI.Process;
 
+
+
 namespace ASF.UI.Process
 {
     public class CategoryProcess : ProcessComponent
@@ -24,6 +26,8 @@ namespace ASF.UI.Process
             var response = HttpGet<AllResponse>("rest/Category/All", new Dictionary<string, object>(), MediaType.Json);
             return response.Result;
         }
+
+       
 
         public void Create(Category Category)
         {

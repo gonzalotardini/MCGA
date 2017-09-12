@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
+using ASF.UI.WbSite.Services.Cache;
 
 
 namespace ASF.UI.WbSite.Areas.Categories.Controllers
@@ -14,8 +15,8 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
         // GET: Categories/Category
         public ActionResult Index()
         {
-            var CategoryProcess = new Process.CategoryProcess();
-            var Lista = CategoryProcess.SelectList();
+
+            var Lista = DataCache.Instance.CategoryList();
             return View(Lista);
         }
 

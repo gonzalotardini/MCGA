@@ -47,6 +47,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
@@ -61,7 +62,6 @@
     <Compile Include="CategoryService.cs" />
     <Compile Include="ClientService.cs" />
     <Compile Include="CountryService.cs" />
-    <Compile Include="DataCache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +77,10 @@
       <Project>{422EB420-D9BC-4286-9E35-E9E3058DEFE8}</Project>
       <Name>ASF.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Presentation\ASF.UI.WbSite\ASF.UI.WbSite.csproj">
+      <Project>{2AE8D9D4-1145-464B-8283-4AAECC485E62}</Project>
+      <Name>ASF.UI.WbSite</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Shared\ASF.Entities\ASF.Entities.csproj">
       <Project>{5F7C08E8-891E-41C7-9E8D-E94B75222C0B}</Project>
       <Name>ASF.Entities</Name>
@@ -85,6 +89,9 @@
       <Project>{D51CA5E5-FB1D-478E-9B11-A7D0BE066828}</Project>
       <Name>ASF.Services.Contracts</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
