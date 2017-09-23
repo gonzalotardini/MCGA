@@ -13,9 +13,11 @@ C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\System.Net.Http.Format
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\System.Web.Http.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\System.Web.Http.WebHost.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\EntityFramework.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\ASF.Business.pdb
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\ASF.Data.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\ASF.Data.dll.config
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\ASF.Services.Contracts.pdb
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\ASF.Services.Http.pdb
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\ASF.Services.Http.dll.config
@@ -26,6 +28,7 @@ C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\System.Net.Http.Format
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\System.Web.Http.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\System.Web.Http.WebHost.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\EntityFramework.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\obj\Debug\ASF.Hosts.Web.csprojResolveAssemblyReference.cache
 C:\GIT\MCGA\SolutionsLeatherGoods\Hosts\ASF.Hosts.Web\obj\Debug\ASF.Hosts.Web.dll

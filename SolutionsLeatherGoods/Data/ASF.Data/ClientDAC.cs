@@ -6,17 +6,19 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ASF.Data.DbContext;
+
 
 namespace ASF.Data
 {
     public class ClientDAC :DataAccessComponent
     {
-        public List<Client> Select()
+        public List<ASF.Entities.Client> Select2()
         {
-            
+
             const string sqlStatement = "select id, FirstName, LastName,Email, CountryId as 'Pais',AspNetUsers as 'User', City, SignupDate, Rowid, OrderCount, CreatedOn, CreatedBy,ChangedOn,ChangedBy from client";
 
-            var result = new List<Client>();
+            var result = new List<Entities.Client>();
             var db = DatabaseFactory.CreateDatabase(ConnectionName);
             using (var cmd = db.GetSqlStringCommand(sqlStatement))
             {
@@ -33,19 +35,64 @@ namespace ASF.Data
             return result;
         }
 
-        private static Client LoadClient(IDataReader dr)
+        public List<Entities.Client> Select()
         {
-            var client = new Client
+            List<Entities.Client> ListaClient = new List<Entities.Client>();
+            var modelo = new LeatherGoodsEntities();
+            var lista = modelo.Client.ToList();
+
+            ListaClient = Mapper(lista);
+
+            return ListaClient;
+           
+        }
+        
+        private static List<Entities.Client> Mapper( List<DbContext.Client> listaRecibida)
+        {
+            Entities.Client Client;
+            List<Entities.Client> listaDevuelta = new List<Entities.Client>();
+
+            List<DbContext.Client> ListaRecibida = new List<DbContext.Client>();
+
+            foreach (DbContext.Client item in ListaRecibida)
+            {
+                Client = new Entities.Client();
+
+                Client.AspNetUsers= item.AspNetUsers;
+                Client.ChangedBy= item.ChangedBy;
+                Client.ChangedOn= item.ChangedOn;
+                Client.City = item.City;
+                Client.CountryId= item.CountryId;
+                Client.CreatedBy = item.CreatedBy;
+                Client.CreatedOn = item.CreatedOn;
+                Client.Email = item.Email;
+                Client.FirstName = item.FirstName;
+                Client.Id = item.Id;
+                Client.LastName= item.LastName;
+                Client.OrderCount = item.OrderCount;
+                //Client.Rowid = item.Rowid;
+                Client.SignupDate= item.SignupDate;
+
+                listaDevuelta.Add(Client);
+            }
+
+            return listaDevuelta;
+        }
+
+        private static Entities.Client LoadClient(IDataReader dr)
+        {
+            var client = new Entities.Client
             {
                 Id = GetDataValue<int>(dr, "Id"),
                 FirstName = GetDataValue<string>(dr, "FirstName"),
+                LastName = GetDataValue<string>(dr, "LastName"),
                 CountryId = GetDataValue<int>(dr, "Pais"),
                 Email = GetDataValue<string>(dr, "Email"),
                 AspNetUsers = GetDataValue<string>(dr, "User"),
                 City = GetDataValue<string>(dr, "City"),
                 SignupDate = GetDataValue<DateTime>(dr, "SignupDate"),
                 Rowid = GetDataValue<Guid>(dr, "RowId"),
-                OrderCount = GetDataValue<int>(dr, "OrderCount"),                
+                OrderCount = GetDataValue<int>(dr, "OrderCount"),
                 CreatedOn = GetDataValue<DateTime>(dr, "CreatedOn"),
                 CreatedBy = GetDataValue<int>(dr, "CreatedBy"),
                 ChangedOn = GetDataValue<DateTime>(dr, "ChangedOn"),

@@ -5,11 +5,14 @@ C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\ASF.Entities.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\ASF.Data.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\EntityFramework.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\ASF.Business.pdb
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\ASF.Entities.pdb
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\ASF.Data.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\ASF.Data.dll.config
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\EntityFramework.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Tests\ASF.Test\obj\Debug\ASF.Test.csprojResolveAssemblyReference.cache

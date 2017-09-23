@@ -12,6 +12,7 @@ using System.Runtime.Serialization;
 using ASF.Entities;
 
 
+
 namespace ASF.Services.Contracts
 {
 

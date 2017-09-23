@@ -30,6 +30,7 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
         [HttpPost]
         public ActionResult Create(Entities.Category category)
         {
+            
             var principal = Thread.CurrentPrincipal.Identity.Name;
             var CategoryProcess = new Process.CategoryProcess();
             CategoryProcess.Create(category);
