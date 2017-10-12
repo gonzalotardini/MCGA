@@ -214,6 +214,7 @@
                             <li><a> @Html.ActionLink("Categorias", "Index", "Category")</a></li>
                             <li><a> @Html.ActionLink("Paises","Index","Country")</a></li>
                             <li><a> @Html.ActionLink("Clientes", "Index", "Client")</a></li>
+                            <li><a> @Html.ActionLink("Proveedores", "Index", "Dealer")</a></li>
                         </ul>
 
                         @if (HttpContext.Current.IsDebuggingEnabled)
@@ -257,7 +258,7 @@
             </div>
             <ul class="nav navbar-nav">
                 <li><a id="a" href="@Url.Action("Index","Home")">Home</a></li>
-                <li><a id="a" href="#">Page 1</a></li>
+                <li><a id="a" href="@Url.Action("Index","Product")">Products</a></li>
                 <li><a id="a" href="#">Page 2</a></li>
                 <li><a id="a" href="#">Page 3</a></li>
             </ul>

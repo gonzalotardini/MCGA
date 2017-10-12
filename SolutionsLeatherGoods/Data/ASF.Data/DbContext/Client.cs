@@ -29,7 +29,7 @@ namespace ASF.Data.DbContext
         public string AspNetUsers { get; set; }
         public string City { get; set; }
         public System.DateTime SignupDate { get; set; }
-        public Nullable<System.Guid> Rowid { get; set; }
+        public Nullable<Guid> Rowid { get; set; }
         public int OrderCount { get; set; }
         public System.DateTime CreatedOn { get; set; }
         public Nullable<int> CreatedBy { get; set; }

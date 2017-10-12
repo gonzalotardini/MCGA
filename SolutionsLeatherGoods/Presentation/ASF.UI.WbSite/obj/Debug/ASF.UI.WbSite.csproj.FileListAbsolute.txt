@@ -194,3 +194,10 @@ C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\es\System.Net.H
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\obj\Debug\ASF.UI.WbSite.csprojResolveAssemblyReference.cache
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\obj\Debug\Boilerplate.Web.Mvc5.Sample.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\obj\Debug\Boilerplate.Web.Mvc5.Sample.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\ASF.Data.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\ASF.Data.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\ASF.Data.dll.config
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml

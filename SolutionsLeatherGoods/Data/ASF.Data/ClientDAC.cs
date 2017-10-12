@@ -52,9 +52,9 @@ namespace ASF.Data
             Entities.Client Client;
             List<Entities.Client> listaDevuelta = new List<Entities.Client>();
 
-            List<DbContext.Client> ListaRecibida = new List<DbContext.Client>();
+          
 
-            foreach (DbContext.Client item in ListaRecibida)
+            foreach (DbContext.Client item in listaRecibida)
             {
                 Client = new Entities.Client();
 
