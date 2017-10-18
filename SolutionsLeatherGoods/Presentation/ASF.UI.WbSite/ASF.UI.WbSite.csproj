@@ -563,10 +563,12 @@
     <Content Include="Views\Country\Index.cshtml" />
     <Content Include="Views\Country\Create.cshtml" />
     <Content Include="Views\Country\Details.cshtml" />
-    <Content Include="Views\Client\Index.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Product\ProductDetail.cshtml" />
+    <Content Include="Views\Client\Index.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
     <Content Include="Views\Dealer\Index.cshtml" />
+    <Content Include="Views\Dealer\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

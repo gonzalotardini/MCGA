@@ -10,6 +10,7 @@ using System.ComponentModel;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using ASF.Entities;
+using ASF.Data.DbContext;
 
 
 
@@ -20,16 +21,16 @@ namespace ASF.Services.Contracts
     public class AllResponse
     {
         [DataMember]
-        public List<Category> Result { get; set; }
+        public List<Entities.Category> Result { get; set; }
 
         [DataMember]
-        public List<Country> ResultCountry { get; set; }
+        public List<Entities.Country> ResultCountry { get; set; }
 
         [DataMember]
-        public List<Client> ResultClient{ get; set; }
+        public List<Data.DbContext.Client> ResultClient{ get; set; }
 
         [DataMember]
-        public List<Dealer> ResultDealer { get; set; }
+        public List<Entities.Dealer> ResultDealer { get; set; }
     }
 }
 

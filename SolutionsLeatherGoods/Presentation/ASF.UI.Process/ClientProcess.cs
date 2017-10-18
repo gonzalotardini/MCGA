@@ -10,7 +10,7 @@ namespace ASF.UI.Process
 {
   public class ClientProcess :ProcessComponent
     {
-        public List<Client> SelectList()
+        public List<Data.DbContext.Client> SelectList()
         {
             var response = HttpGet<AllResponse>("rest/Client/All", new Dictionary<string, object>(), MediaType.Json);
             return response.ResultClient;

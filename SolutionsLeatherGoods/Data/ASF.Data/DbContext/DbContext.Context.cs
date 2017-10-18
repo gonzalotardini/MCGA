@@ -45,5 +45,7 @@ namespace ASF.Data.DbContext
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<Rating> Rating { get; set; }
         public virtual DbSet<Setting> Setting { get; set; }
+
+        public System.Data.Entity.DbSet<ASF.Entities.Dealer> Dealers { get; set; }
     }
 }

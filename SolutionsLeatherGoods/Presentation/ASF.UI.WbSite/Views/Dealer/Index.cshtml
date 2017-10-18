@@ -17,11 +17,13 @@
         <th>
             @Html.DisplayNameFor(model => model.LastName)
         </th>
+        
         <th>
-            @Html.DisplayNameFor(model => model.CategoryId)
+            @Html.DisplayNameFor(model => model.CategoryDesc)
         </th>
+        
         <th>
-            @Html.DisplayNameFor(model => model.CountryId)
+            @Html.DisplayNameFor(model => model.Countrydesc)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Description)
@@ -29,21 +31,7 @@
         <th>
             @Html.DisplayNameFor(model => model.TotalProducts)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Rowid)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreatedOn)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreatedBy)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ChangedOn)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ChangedBy)
-        </th>
+        
         <th></th>
     </tr>
 
@@ -55,11 +43,13 @@
         <td>
             @Html.DisplayFor(modelItem => item.LastName)
         </td>
+       
         <td>
-            @Html.DisplayFor(modelItem => item.CategoryId)
+            @Html.DisplayFor(modelItem => item.CategoryDesc)
         </td>
+        
         <td>
-            @Html.DisplayFor(modelItem => item.CountryId)
+            @Html.DisplayFor(modelItem => item.Countrydesc)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Description)
@@ -67,21 +57,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.TotalProducts)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Rowid)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreatedOn)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreatedBy)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ChangedOn)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ChangedBy)
-        </td>
+        
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |

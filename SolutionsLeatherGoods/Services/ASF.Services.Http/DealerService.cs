@@ -38,5 +38,28 @@ namespace ASF.Services.Http
                 }
             }
         
+
+        [HttpGet]
+        [Route("Find")]
+        public FindResponse Find(int id)
+        {
+            try
+            {
+                var response = new FindResponse();
+                var bc = new DealerBusiness();
+                response.ResultDealer = bc.SelectOne(id);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                var httpError = new HttpResponseMessage()
+                {
+                    StatusCode = (HttpStatusCode)422,
+                    ReasonPhrase = ex.Message
+                };
+
+                throw new HttpResponseException(httpError);
+            }
+        }
     }
 }

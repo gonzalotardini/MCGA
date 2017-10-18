@@ -1,5 +1,5 @@
-C:\GIT\MCGA\SolutionsLeatherGoods\Services\ASF.Services\obj\Debug\ASF.Services.csprojResolveAssemblyReference.cache
 C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.Services.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.Services.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Services\ASF.Services\obj\Debug\ASF.Services.csprojResolveAssemblyReference.cache
 C:\GIT\MCGA\SolutionsLeatherGoods\Services\ASF.Services\obj\Debug\ASF.Services.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Services\ASF.Services\obj\Debug\ASF.Services.pdb

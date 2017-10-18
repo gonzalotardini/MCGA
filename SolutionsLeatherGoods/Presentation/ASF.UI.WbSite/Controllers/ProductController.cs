@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ASF.Data.DbContext;
+using ASF.UI.Process;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +18,12 @@ namespace ASF.UI.WbSite.Controllers
 
         public ActionResult ProductDetail()
         {
+            return View();
+        }
+
+        public ActionResult Create()
+        {                
+
             return View();
         }
     }

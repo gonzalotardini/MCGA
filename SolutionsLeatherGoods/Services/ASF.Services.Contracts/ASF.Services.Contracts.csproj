@@ -46,6 +46,10 @@
     <Compile Include="Responses\FindResponse.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Data\ASF.Data\ASF.Data.csproj">
+      <Project>{422eb420-d9bc-4286-9e35-e9e3058defe8}</Project>
+      <Name>ASF.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Shared\ASF.Entities\ASF.Entities.csproj">
       <Project>{5F7C08E8-891E-41C7-9E8D-E94B75222C0B}</Project>
       <Name>ASF.Entities</Name>

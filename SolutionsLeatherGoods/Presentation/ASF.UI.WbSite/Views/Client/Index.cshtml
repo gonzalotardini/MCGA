@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ASF.Entities.Client>
+﻿@model IEnumerable<ASF.Data.DbContext.Client>
 
 @{
     ViewBag.Title = "Index";
@@ -19,9 +19,6 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CountryId)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.AspNetUsers)
@@ -50,6 +47,9 @@
         <th>
             @Html.DisplayNameFor(model => model.ChangedBy)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Country.Name)
+        </th>
         <th></th>
     </tr>
 
@@ -63,9 +63,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CountryId)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AspNetUsers)
@@ -93,6 +90,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.ChangedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Country.Name)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

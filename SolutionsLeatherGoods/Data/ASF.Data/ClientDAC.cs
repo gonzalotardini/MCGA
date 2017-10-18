@@ -35,15 +35,16 @@ namespace ASF.Data
             return result;
         }
 
-        public List<Entities.Client> Select()
+        public List<DbContext.Client> Select()
         {
-            List<Entities.Client> ListaClient = new List<Entities.Client>();
+            //List<Entities.Client> ListaClient = new List<Entities.Client>();
             var modelo = new LeatherGoodsEntities();
-            var lista = modelo.Client.ToList();
+            var lista = new List<DbContext.Client>();
 
-            ListaClient = Mapper(lista);
+            lista= modelo.Client.ToList();
+            //ListaClient = Mapper(lista);
 
-            return ListaClient;
+            return lista;
            
         }
         
@@ -62,7 +63,7 @@ namespace ASF.Data
                 Client.ChangedBy= item.ChangedBy;
                 Client.ChangedOn= item.ChangedOn;
                 Client.City = item.City;
-                Client.CountryId= item.CountryId;
+                Client.CountryId= item.CountryId;                
                 Client.CreatedBy = item.CreatedBy;
                 Client.CreatedOn = item.CreatedOn;
                 Client.Email = item.Email;

@@ -13,8 +13,9 @@ namespace ASF.UI.WbSite.Controllers
         public ActionResult Index()
         {
             var clientProcess = new Process.ClientProcess();
-            var ListaClientes = clientProcess.SelectList();                    
+            var ListaClientes = clientProcess.SelectList();   
 
+            
             return View(ListaClientes);
         }
     }

@@ -14,14 +14,25 @@ namespace ASF.Data
         public List<Entities.Dealer> SelectAll()
         {
             var Context = new LeatherGoodsEntities();
-            var listaDealers = Context.Dealer.ToList();
+            var listaDealers = from dealers in Context.Dealer
+                               select dealers;
             var ListaDevuelta = new List<Entities.Dealer>();
 
             ListaDevuelta = MapperDealer(listaDealers);
             return ListaDevuelta;
         }
 
-        private List<Entities.Dealer> MapperDealer (List<DbContext.Dealer> ListaRecibida)
+        public Entities.Dealer SelectOne(int id)
+        {
+            var context = new LeatherGoodsEntities();
+            
+            var listaDealer = from dealers in context.Dealer where dealers.Id==id
+                          select dealers;
+
+           return MapperDealer(listaDealer)[0];
+        }
+
+        private List<Entities.Dealer> MapperDealer (IQueryable<DbContext.Dealer> ListaRecibida)
         {
             List<Entities.Dealer> ListaDealer = new List<Entities.Dealer>();
 
@@ -37,9 +48,12 @@ namespace ASF.Data
                 Dealer.CreatedOn = i.CreatedOn;
                 Dealer.Description = i.Description;
                 Dealer.FirstName = i.FirstName;
+                Dealer.LastName = i.LastName;
                 Dealer.Id = i.Id;
                 //Dealer.Rowid = i.Rowid;
                 Dealer.TotalProducts = i.TotalProducts;
+                Dealer.Countrydesc = i.Country.Name;
+                Dealer.CategoryDesc = i.Category.Name;
 
                 ListaDealer.Add(Dealer);                    
             }

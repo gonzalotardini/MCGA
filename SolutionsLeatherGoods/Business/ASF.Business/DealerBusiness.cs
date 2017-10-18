@@ -16,5 +16,12 @@ namespace ASF.Business
 
             return DealerDac.SelectAll();
         }
+
+        public Dealer SelectOne(int id)
+        {
+            var DealerDac = new DealerDAC();
+
+            return DealerDac.SelectOne(id);
+        }
     }
 }
