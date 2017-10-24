@@ -7,6 +7,5 @@ C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\Microsoft.Web.I
 C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\HtmlAgilityPack.pdb
 C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\HtmlAgilityPack.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\bin\Debug\HtmlSanitizationLibrary.xml
-C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\obj\Debug\ASF.Framework.csprojResolveAssemblyReference.cache
 C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\obj\Debug\ASF.Framework.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Framework\obj\Debug\ASF.Framework.pdb

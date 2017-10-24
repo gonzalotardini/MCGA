@@ -31,6 +31,9 @@ namespace ASF.Services.Contracts
 
         [DataMember]
         public List<Entities.Dealer> ResultDealer { get; set; }
+
+        [DataMember]
+        public List<Entities.Product> ResultProduct { get; set; }
     }
 }
 

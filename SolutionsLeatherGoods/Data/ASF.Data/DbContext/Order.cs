@@ -24,7 +24,7 @@ namespace ASF.Data.DbContext
         public int ClientId { get; set; }
         public System.DateTime OrderDate { get; set; }
         public double TotalPrice { get; set; }
-        public Nullable<int> State { get; set; }
+        public string State { get; set; }
         public int OrderNumber { get; set; }
         public int ItemCount { get; set; }
         public Nullable<System.Guid> Rowid { get; set; }

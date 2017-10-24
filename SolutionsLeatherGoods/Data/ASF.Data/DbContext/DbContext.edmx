@@ -197,7 +197,7 @@
           <Property Name="ClientId" Type="int" Nullable="false" />
           <Property Name="OrderDate" Type="datetime" Nullable="false" />
           <Property Name="TotalPrice" Type="float" Nullable="false" />
-          <Property Name="State" Type="int" />
+          <Property Name="State" Type="varchar" MaxLength="10" />
           <Property Name="OrderNumber" Type="int" Nullable="false" />
           <Property Name="ItemCount" Type="int" Nullable="false" />
           <Property Name="Rowid" Type="uniqueidentifier" />
@@ -239,7 +239,7 @@
           <Property Name="Title" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="Description" Type="nvarchar" MaxLength="250" />
           <Property Name="DealerId" Type="int" Nullable="false" />
-          <Property Name="Image" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Image" Type="image" Nullable="false" />
           <Property Name="Price" Type="float" Nullable="false" />
           <Property Name="QuantitySold" Type="int" Nullable="false" />
           <Property Name="AvgStars" Type="float" Nullable="false" />
@@ -784,7 +784,7 @@
           <Property Name="ClientId" Type="Int32" Nullable="false" />
           <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="TotalPrice" Type="Double" Nullable="false" />
-          <Property Name="State" Type="Int32" />
+          <Property Name="State" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="OrderNumber" Type="Int32" Nullable="false" />
           <Property Name="ItemCount" Type="Int32" Nullable="false" />
           <Property Name="Rowid" Type="Guid" />
@@ -830,7 +830,7 @@
           <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="DealerId" Type="Int32" Nullable="false" />
-          <Property Name="Image" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
           <Property Name="Price" Type="Double" Nullable="false" />
           <Property Name="QuantitySold" Type="Int32" Nullable="false" />
           <Property Name="AvgStars" Type="Double" Nullable="false" />

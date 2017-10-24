@@ -7,4 +7,3 @@ C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.Entities.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.Entities.pdb
 C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Entities\obj\Debug\ASF.Entities.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Entities\obj\Debug\ASF.Entities.pdb
-C:\GIT\MCGA\SolutionsLeatherGoods\Shared\ASF.Entities\obj\Debug\ASF.Entities.csprojResolveAssemblyReference.cache

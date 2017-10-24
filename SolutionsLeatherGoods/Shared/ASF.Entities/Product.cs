@@ -51,12 +51,16 @@ namespace ASF.Entities
         [DisplayName("Dealer Id")]
         public int DealerId { get; set; }
 
+        [DataMember]
+        [DisplayName("Dealer desc")]
+        public string DealerDesc { get; set; }
+
         /// <summary>
         /// 
         /// </summary>
         [DataMember]
         [DisplayName("Image")]
-        public string Image { get; set; }
+        public byte Image { get; set; }
 
         /// <summary>
         /// 

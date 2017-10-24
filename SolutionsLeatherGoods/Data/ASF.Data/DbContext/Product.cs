@@ -25,7 +25,7 @@ namespace ASF.Data.DbContext
         public string Title { get; set; }
         public string Description { get; set; }
         public int DealerId { get; set; }
-        public string Image { get; set; }
+        public byte[] Image { get; set; }
         public double Price { get; set; }
         public int QuantitySold { get; set; }
         public double AvgStars { get; set; }
