@@ -567,9 +567,7 @@
     <Content Include="Views\Client\Index.cshtml" />
     <Content Include="Views\Dealer\Index.cshtml" />
     <Content Include="Views\Dealer\Details.cshtml" />
-    <Content Include="Views\Product\Create3.cshtml" />
     <Content Include="Views\Product\ProductDetail.cshtml" />
-    <Content Include="Views\Product\Create5.cshtml" />
     <Content Include="Views\Product\Create.cshtml" />
     <Content Include="Views\Product\Index2.cshtml" />
   </ItemGroup>

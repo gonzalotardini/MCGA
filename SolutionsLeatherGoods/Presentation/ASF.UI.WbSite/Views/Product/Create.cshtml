@@ -27,7 +27,7 @@
             <div class="form-group">
                 <label class="control-label col-md-2">Dealer</label>
                 <div class="col-md-10">
-                    @*<select class="form-control" name="Product.DealerId"/>*@
+                   
                     @Html.DropDownList("Product.DealerId", new SelectList(ViewBag.dealer, "Id", "Description"), new { @class = "form-control col-md-2" })
 
 </div>
@@ -36,7 +36,7 @@
             <div class="form-group">
                <label class="control-label col-md-2">Imagen</label>
                 <div class="col-md-10">
-                    <input type="file" name="file" class="btn btn-default"/>
+                    <input type="file" name="file" class="file"/>
                 </div>
             </div>
 

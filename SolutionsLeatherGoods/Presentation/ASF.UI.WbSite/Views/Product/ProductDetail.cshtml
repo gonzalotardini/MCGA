@@ -58,49 +58,12 @@
             @Html.DisplayFor(model => model.AvgStars)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Rowid)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Rowid)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedOn)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedOn)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedBy)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedBy)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ChangedOn)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ChangedOn)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ChangedBy)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ChangedBy)
-        </dd>             
+        <img src="@Url.Action("Images", "Product", new { id = Model.Id })" />
+                    
 
     </dl>
 
-    <img src="@Url.Action("Images", "Product", new { id = 1 })" />
+    
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |

@@ -45,9 +45,9 @@ namespace ASF.UI.WbSite.Controllers
             return View(listaProduct);
         }
 
-        public ActionResult ProductDetail()
+        public ActionResult ProductDetail(int id)
         {
-            var id = 2;
+            
             var context = new LeatherGoodsEntities();
             //byte[] imageData = context.Product.FirstOrDefault(i => i.Id == id)?.Image;
             //if (imageData != null)
@@ -68,8 +68,7 @@ namespace ASF.UI.WbSite.Controllers
 
 
         public ActionResult Images(int id)
-        {
-            id = 2;
+        {            
             var context = new LeatherGoodsEntities();
             byte[] imageData = context.Product.FirstOrDefault(i => i.Id == id)?.Image;
             if (imageData != null)
@@ -104,13 +103,9 @@ namespace ASF.UI.WbSite.Controllers
         [HttpPost]
         public ActionResult Create(Data.DbContext.Product product, HttpPostedFileBase file)
         {
-            var context = new LeatherGoodsEntities();
+            var context = new LeatherGoodsEntities();                  
 
-                   
-
-
-
-
+            
             if (file != null)
             {
                 using (MemoryStream ms = new MemoryStream())
