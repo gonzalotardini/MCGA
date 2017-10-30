@@ -411,7 +411,7 @@
     <Content Include="Content\ProductCart\Css\reset.css" />
     <Content Include="Content\ProductCart\Css\style.css" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
-    <Content Include="Content\ProductCart\productindex.js" />
+    <Content Include="Content\ProductCart\productCart.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\jquery-3.2.1.slim.js" />

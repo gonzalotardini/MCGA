@@ -3,7 +3,10 @@
 @* lang - The language of the page. *@
 @* no-js - The no JavaScript class is removed by modernizr if JavaScript is available. *@
 <html class="no-js" lang="en">
-<head @(ViewBag.OpenGraph == null ? null : Html.OpenGraphNamespace((OpenGraphMetadata)ViewBag.OpenGraph))>
+<head @(ViewBag.OpenGraph == null ? null : Html.OpenGraphNamespace((OpenGraphMetadata)ViewBag.OpenGraph))>  
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/ProductCart/productCart.js"></script>
+    
     @* The order of the tags in the head is important for best performance and compatibility. *@
     @* charset - The character encoding of the document. *@
     <meta charset="utf-8">
@@ -159,10 +162,12 @@
         #Nav2{
             background-color:#930606;
             text-align:center;
+            
         }
 
         .container-fluid{
            text-align:center;
+           width:25cm;
         }
         
          .navbar-nav{
@@ -183,7 +188,27 @@
         ul.navbar-nav a:hover {
             color: #fff !important;
         }
+
+        #cart{
+            position:center;
+            padding-top:0.5cm;
+        }
+
+        #cartContent {
+            z-index: 100;
+            text-align: center;
+            background-color: ghostwhite;
+            border-color: black;
+            border: solid;
+            position: absolute;
+            left: 30cm;
+            top: 3cm;
+            width: 8cm;
+            display: none;
+        }
+     
     </style>
+    
 </head>
 <body>
     @* Skip to main content link for people who use screen readers. sr-only makes this only visible to screen readers.
@@ -262,14 +287,37 @@
                 <li><a id="a" href="@Url.Action("Index","Home")">Home</a></li>
                 <li><a id="a" href="@Url.Action("Index","Product")">Products</a></li>
                 <li><a id="a" href="#">Page 2</a></li>
-                <li><a id="a" href="#">Page 3</a></li>
+                <li><a id="a" href="#">Page 3</a></li>                       
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="cart">
+                <li style="font-size:1.5em;" id="carticon" class="glyphicon glyphicon-shopping-cart my-cart-icon"></li>                                
             </ul>
         </div>
+
+      
     </nav>
+    <div id="cartContent" class="jumbotron">
+       <ul>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+           <li>product</li>
+                      <li>product</li>
+       </ul>
+    </div>
    
-
-
-    <div id="main" class="container body-content" role="main">
+    <div id="main" class="container body-content" role="main">       
+ </div>
 
 
         <!--[if lt IE 8]>
@@ -282,13 +330,13 @@
         <footer role="contentinfo">
             <p>&copy; @DateTime.Now.Year - @Application.Name</p>
         </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jqueryval")
-    @Scripts.Render("~/bundles/jqueryvalunobtrusive")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/site")
-    @RenderSection("scripts", required: false)
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/jqueryvalunobtrusive")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/site")
+        @RenderSection("scripts", required: false)
 </body>
 </html>
