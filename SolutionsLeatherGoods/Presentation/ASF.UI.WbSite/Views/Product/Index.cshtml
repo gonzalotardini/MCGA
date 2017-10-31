@@ -44,7 +44,7 @@
                         <div class="thumbnail">
                             <img src="@Url.Action("Images", "Product", new { id = item.Id })" width="200" height="200" />
                             <div class="caption">
-                                <h4>@Html.ActionLink(item.Title, "ProductDetail", new { id = item.Id })</h4>
+                                <h4 name="title">@Html.ActionLink(item.Title, "ProductDetail", new { id = item.Id })</h4>
 
                                 $
                                 @Html.DisplayFor(modelItem => item.Price)
@@ -62,9 +62,9 @@
                                 </p>
                             </div>
                             <div class="space-ten"></div>
-                            <div class="btn-ground text-center">
-                                <button id="btn" type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i> Quick View</button>
+                            <div class="btn-ground text-center">                                
+                                @Html.ActionLink("Detalles", "ProductDetail", new { id = item.Id }, new { @class = "btn btn-primary" })
+                                @*<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i> Quick View</button>*@
                             </div>
                             <div class="space-ten"></div>
                         </div>

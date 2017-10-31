@@ -29,6 +29,7 @@ namespace ASF.UI.WbSite.Controllers
                 product.Title = i.Title;
                 product.AvgStars = i.AvgStars;
                 product.DealerId = i.DealerId;
+                product.Description = i.Description;
 
                 ListaProduct.Add(product);
             }
