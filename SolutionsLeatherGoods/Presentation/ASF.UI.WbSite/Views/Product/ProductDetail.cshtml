@@ -4,36 +4,62 @@
     ViewBag.Title = "ProductDetail";
 }
 <style>
-   
+    #container{
+       text-align:center;   
+       padding:2cm;
+    }
+    img {
+       
+        position:relative;
+        float:left;
+        border-style:solid;
+        border-color:black;
+        
+        
+    }
+    .jumbotron{
+        background-color:white;
+    }
+    #btn{
+        margin-left:0.7cm;
+    }
 </style>
-<div class="container center-block">
+<div class=" center-block">
     <div class="row" id="content">
-        <div class="col-md-6 col-md-offset-3">
-            <div class="thumbnail">
-                <img src="" alt="" class="img-responsive">
-                <div class="caption">
-                    <h4 class="pull-right">$700.99</h4>
-                    <h4>@Model.Title</h4>
-                    <img src="@Url.Action("Images", "Product", new { id = Model.Id })" width="400" height="400" />
-                    <p>@Model.Description</p>
+        <div class="col-md-8 col-md-offset-2">
+            <div id="container" class="thumbnail container">
+                
+                <img src="@Url.Action("Images", "Product", new { id = Model.Id })" width="400" height="400" />
+                <div class="caption" style="padding-top:2cm">                    
+                    <h2 style="font-weight:bold">@Model.Title</h2>
+                    <h2>$@Model.Price</h2>               
+                    
                 </div>
                 <div class="ratings">
-                    <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        (15 reviews)
-                    </p>
+                    @for (int i = 0; i < (Model.AvgStars); i++)
+                    {
+                        <span class="fa fa-star gold"></span>
+
+                    }
                 </div>
+                <br />
                 <div class="space-ten"></div>
-                <div class="btn-ground text-center">
-                    <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view"><i class="fa fa-search"></i> Quick View</button>
+                
+                <div class="btn-ground text-center">                    
+                    <input type="number" value="1" name="cantidad" id="cantidad" style="font-size:medium;font-weight:bold; width:50px;height:42px;text-align:center;border:1px solid #CCCCCC" />
+                    <button id="btn" type="button" class="btn-lg btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>                 
                 </div>
+
+               
+                
                 <div class="space-ten"></div>
+               
+                <div class="row col-xs-12" style="position:static">    
+                    <h2 class="jumbotron">Detalles</h2>
+                <p style="font-size:medium">@Model.Description</p>
+                </div>
             </div>
+
         </div>
     </div>
 </div>

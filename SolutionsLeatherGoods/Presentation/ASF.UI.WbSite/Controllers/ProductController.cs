@@ -38,7 +38,9 @@ namespace ASF.UI.WbSite.Controllers
         }
 
 
+
         // GET: Product
+        [Authorize]
         public ActionResult Index()
         {
             var productProcess = new ProductProcess();
