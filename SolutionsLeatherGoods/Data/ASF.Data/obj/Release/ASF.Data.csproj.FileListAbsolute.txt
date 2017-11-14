@@ -1,0 +1,6 @@
+C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.Data.dll.config
+C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.Data.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.Data.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Data\ASF.Data\obj\Release\ASF.Data.csprojResolveAssemblyReference.cache
+C:\GIT\MCGA\SolutionsLeatherGoods\Data\ASF.Data\obj\Release\ASF.Data.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Data\ASF.Data\obj\Release\ASF.Data.pdb

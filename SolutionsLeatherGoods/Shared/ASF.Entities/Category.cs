@@ -51,6 +51,7 @@ namespace ASF.Entities
         [DisplayName("Created By")]
         public int? CreatedBy { get; set; }
 
+
         /// <summary>
         /// 
         /// </summary>

@@ -15,7 +15,7 @@ namespace ASF.UI.WbSite.Areas.Categories.Controllers
         // GET: Categories/Category
         public ActionResult Index()
         {
-
+            var user = User.Identity.Name;
             var Lista = DataCache.Instance.CategoryList();
             return View(Lista);
         }

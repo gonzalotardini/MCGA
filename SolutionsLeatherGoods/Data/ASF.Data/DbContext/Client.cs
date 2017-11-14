@@ -25,15 +25,15 @@ namespace ASF.Data.DbContext
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public int CountryId { get; set; }
+        public Nullable<int> CountryId { get; set; }
         public string AspNetUsers { get; set; }
         public string City { get; set; }
-        public System.DateTime SignupDate { get; set; }
+        public Nullable<System.DateTime> SignupDate { get; set; }
         public Nullable<System.Guid> Rowid { get; set; }
-        public int OrderCount { get; set; }
-        public System.DateTime CreatedOn { get; set; }
+        public Nullable<int> OrderCount { get; set; }
+        public Nullable<System.DateTime> CreatedOn { get; set; }
         public Nullable<int> CreatedBy { get; set; }
-        public System.DateTime ChangedOn { get; set; }
+        public Nullable<System.DateTime> ChangedOn { get; set; }
         public Nullable<int> ChangedBy { get; set; }
     
         public virtual Country Country { get; set; }

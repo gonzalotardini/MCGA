@@ -1,0 +1,14 @@
+﻿@model ASF.UI.WbSite.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+<div class="container">
+    <h2>@ViewBag.Title</h2>
+    <div class="col-lg-6 col-lg-offset-3">
+        <a class="btn btn-warning btn-lg" href=@Url.Action("ChangePassword", "Manage")>Datos Personales</a>
+        <a class="btn btn-warning btn-lg" href=@Url.Action("ChangePassword", "Manage")>Cambiar Contraseña</a>
+        <a class="btn btn-warning btn-lg" href=@Url.Action("ChangePassword", "Manage")>Pedidos</a>
+    </div>
+    
+</div>
+

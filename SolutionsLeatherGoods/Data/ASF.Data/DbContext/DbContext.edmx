@@ -61,7 +61,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Cookie" Type="nvarchar" MaxLength="40" Nullable="false" />
+          <Property Name="IdUser" Type="nvarchar" MaxLength="128" Nullable="false" />
           <Property Name="CartDate" Type="datetime" Nullable="false" />
           <Property Name="ItemCount" Type="int" Nullable="false" />
           <Property Name="Rowid" Type="uniqueidentifier" />
@@ -100,18 +100,18 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="FirstName" Type="nvarchar" MaxLength="30" Nullable="false" />
-          <Property Name="LastName" Type="nvarchar" MaxLength="30" Nullable="false" />
-          <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
-          <Property Name="CountryId" Type="int" Nullable="false" />
-          <Property Name="AspNetUsers" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="30" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="30" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="CountryId" Type="int" />
+          <Property Name="AspNetUsers" Type="nvarchar" MaxLength="128" />
           <Property Name="City" Type="nvarchar" MaxLength="30" />
-          <Property Name="SignupDate" Type="datetime" Nullable="false" />
+          <Property Name="SignupDate" Type="datetime" />
           <Property Name="Rowid" Type="uniqueidentifier" />
-          <Property Name="OrderCount" Type="int" Nullable="false" />
-          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="OrderCount" Type="int" />
+          <Property Name="CreatedOn" Type="datetime" />
           <Property Name="CreatedBy" Type="int" />
-          <Property Name="ChangedOn" Type="datetime" Nullable="false" />
+          <Property Name="ChangedOn" Type="datetime" />
           <Property Name="ChangedBy" Type="int" />
         </EntityType>
         <EntityType Name="Country">
@@ -300,7 +300,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_CLIENT_REFERENCE_COUNTRY">
-          <End Role="Country" Type="Self.Country" Multiplicity="1" />
+          <End Role="Country" Type="Self.Country" Multiplicity="0..1" />
           <End Role="Client" Type="Self.Client" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Country">
@@ -633,7 +633,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Cookie" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IdUser" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="CartDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="ItemCount" Type="Int32" Nullable="false" />
           <Property Name="Rowid" Type="Guid" />
@@ -675,18 +675,18 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="FirstName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="LastName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="CountryId" Type="Int32" Nullable="false" />
-          <Property Name="AspNetUsers" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CountryId" Type="Int32" />
+          <Property Name="AspNetUsers" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
           <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="SignupDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SignupDate" Type="DateTime" Precision="3" />
           <Property Name="Rowid" Type="Guid" />
-          <Property Name="OrderCount" Type="Int32" Nullable="false" />
-          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OrderCount" Type="Int32" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
           <Property Name="CreatedBy" Type="Int32" />
-          <Property Name="ChangedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ChangedOn" Type="DateTime" Precision="3" />
           <Property Name="ChangedBy" Type="Int32" />
           <NavigationProperty Name="Country" Relationship="Self.FK_CLIENT_REFERENCE_COUNTRY" FromRole="Client" ToRole="Country" />
           <NavigationProperty Name="Order" Relationship="Self.FK_ORDER_REFERENCE_Client" FromRole="Client" ToRole="Order" />
@@ -936,7 +936,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_CLIENT_REFERENCE_COUNTRY">
-          <End Role="Country" Type="Self.Country" Multiplicity="1" />
+          <End Role="Country" Type="Self.Country" Multiplicity="0..1" />
           <End Role="Client" Type="Self.Client" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Country">
@@ -1196,7 +1196,7 @@
             <EntityTypeMapping TypeName="LeatherGoodsModel.Cart">
               <MappingFragment StoreEntitySet="Cart">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Cookie" ColumnName="Cookie" />
+                <ScalarProperty Name="IdUser" ColumnName="IdUser" />
                 <ScalarProperty Name="CartDate" ColumnName="CartDate" />
                 <ScalarProperty Name="ItemCount" ColumnName="ItemCount" />
                 <ScalarProperty Name="Rowid" ColumnName="Rowid" />

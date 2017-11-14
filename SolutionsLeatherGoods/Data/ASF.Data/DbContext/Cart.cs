@@ -21,7 +21,7 @@ namespace ASF.Data.DbContext
         }
     
         public int Id { get; set; }
-        public string Cookie { get; set; }
+        public string IdUser { get; set; }
         public System.DateTime CartDate { get; set; }
         public int ItemCount { get; set; }
         public Nullable<System.Guid> Rowid { get; set; }

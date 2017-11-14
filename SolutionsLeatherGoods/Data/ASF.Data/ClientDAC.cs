@@ -61,18 +61,18 @@ namespace ASF.Data
 
                 Client.AspNetUsers= item.AspNetUsers;
                 Client.ChangedBy= item.ChangedBy;
-                Client.ChangedOn= item.ChangedOn;
+                Client.ChangedOn = Convert.ToDateTime(item.ChangedOn);
                 Client.City = item.City;
-                Client.CountryId= item.CountryId;                
+                Client.CountryId = Convert.ToInt32(item.CountryId);                
                 Client.CreatedBy = item.CreatedBy;
-                Client.CreatedOn = item.CreatedOn;
+                Client.CreatedOn = Convert.ToDateTime(item.CreatedOn);
                 Client.Email = item.Email;
                 Client.FirstName = item.FirstName;
                 Client.Id = item.Id;
                 Client.LastName= item.LastName;
-                Client.OrderCount = item.OrderCount;
+                Client.OrderCount = Convert.ToInt32(item.OrderCount);
                 //Client.Rowid = item.Rowid;
-                Client.SignupDate= item.SignupDate;
+                Client.SignupDate= Convert.ToDateTime(item.SignupDate);
 
                 listaDevuelta.Add(Client);
             }

@@ -241,6 +241,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Constants\ExtensionMethods\HtmlLabelExtensions.cs" />
     <Compile Include="Constants\ExtensionMethods\TypeFactory.cs" />
@@ -410,6 +411,7 @@
     <Content Include="Content\ProductCart\main.js" />
     <Content Include="Content\ProductCart\Css\reset.css" />
     <Content Include="Content\ProductCart\Css\style.css" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Content\ProductCart\productCart.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
@@ -576,6 +578,7 @@
     <Content Include="Views\Product\Index2.cshtml" />
     <Content Include="Views\Product\ProductDetail.cshtml" />
     <Content Include="Views\Product\addTocart.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

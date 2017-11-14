@@ -144,6 +144,7 @@ C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\System.Web.WebP
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\System.Web.WebPages.Razor.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\WebGrease.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\ASF.Business.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\ASF.Services.Contracts.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\System.Net.Http.Formatting.dll
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
@@ -194,6 +195,7 @@ C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\System.Web.WebP
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\System.Web.WebPages.Razor.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\System.Web.Optimization.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\ASF.Business.pdb
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\ASF.Services.Contracts.pdb
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\System.Net.Http.Formatting.xml
 C:\GIT\MCGA\SolutionsLeatherGoods\Presentation\ASF.UI.WbSite\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml

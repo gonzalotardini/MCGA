@@ -1,0 +1,5 @@
+C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.Services.Contracts.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\bin\ASF.Services.Contracts.pdb
+C:\GIT\MCGA\SolutionsLeatherGoods\Services\ASF.Services.Contracts\obj\Release\ASF.Services.Contracts.csprojResolveAssemblyReference.cache
+C:\GIT\MCGA\SolutionsLeatherGoods\Services\ASF.Services.Contracts\obj\Release\ASF.Services.Contracts.dll
+C:\GIT\MCGA\SolutionsLeatherGoods\Services\ASF.Services.Contracts\obj\Release\ASF.Services.Contracts.pdb

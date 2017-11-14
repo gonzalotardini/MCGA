@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ASF.Entities.Country>
+
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+
+    h5 {
+    font-weight:bold;
+    vertical-align:top;
+    }
+
+</style>
+
+<div class="container">
+    <div class="jumbotron">
+        <h2>Países</h2>
+    </div>
+
+    <p>
+        @Html.ActionLink("Nuevo", "Create", "Country", new { @class = "btn btn-info" })
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                <h5>Descripción</h5>
+            </th>
+            <th>
+                <h5>Fecha de creación</h5>
+            </th>
+            <th>
+                <h5>Creado por</h5>
+            </th>
+            <th>
+                <h5>Fecha de actualización</h5>
+            </th>
+            <th>
+                <h5>Actualizado por</h5>
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedOn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChangedOn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChangedBy)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn-xs btn-info" })
+                    @Html.ActionLink("Detalles", "Details", new { id = item.Id }, new { @class = "btn-xs btn-warning" })
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.Id }, new { @class = "btn-xs btn-danger" })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
